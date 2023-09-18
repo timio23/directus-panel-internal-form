@@ -33,7 +33,21 @@ export default {
 				width: 'half',
 			},
 		},
+		{
+			field: 'response_format',
+			name: 'Response',
+			type: 'string',
+			meta: {
+				interface: 'system-display-template',
+				options: {
+					collectionField: 'collection',
+					placeholder: '{{ field }}',
+				},
+				width: 'full',
+			},
+		},
 	],
 	minWidth: 12,
 	minHeight: 8,
+	skipUndefinedKeys: ['response_format'],
 };
